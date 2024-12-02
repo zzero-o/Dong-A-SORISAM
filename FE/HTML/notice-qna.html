@@ -1,0 +1,92 @@
+<!--청원안내 > 문의사항-->
+
+<!DOCTYPE html>
+<html lang = "ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>DONG-A 소리함</title>
+        <link rel = "stylesheet" href = "../CSS/notice-qna.css">
+    </head>
+    <body>
+        <!--Header 영역-->
+        <header>
+            <div class = "header-container">
+                <div class = "logo">
+                    <!--로고 클릭 시 메인페이지(main.html)로 이동-->
+                    <a href = "main.html">
+                        <img src = "../PNG/DONG-A 소리함 로고.png" alt = "DONG-A 소리함 로고">
+                    </a>
+                </div>
+                <div class = "search-box">
+                    <input class = "input-box" type = "text" placeholder = "검색 키워드를 입력하세요">
+                    <button class = "input-button" type = "submit">
+                        검색
+                    </button>
+                </div>
+                <div class = "login-section">
+                    <!--로그인 페이지로 이동-->
+                    <a href = "login.html">로그인</a>
+                    <!--회원가입 페이지로 이동-->
+                    <a href = "join.html">회원가입</a>
+                </div>
+            </div>
+            <div class = "selection">
+                <nav>
+                    <ul>
+                        <!--청원 안내 페이지로 이동-->
+                        <li><a href = "notice-sequence.html">청원 안내</a></li>
+                        <!--동의 진행 청원 페이지로 이동-->
+                        <li><a href = "proceed.html">동의진행 청원</a></li>
+                        <!--동의 종료 청원 페이지로 이동-->
+                        <li><a href = "end.html">동의종료 청원</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <!--Body 영역-->
+        <section class = "main-banner">
+            <img src = "../PNG/DONG-A 배너.png" alt = "메인 배너 이미지 (동아대학교 승학캠퍼스 전경)">
+            <div class = "overlay">
+                <h1>청원안내</h1>
+                <div class = "petition-button">
+                    <!--청원절차 페이지로 이동-->
+                    <button>청원절차</button>
+                    <!--청원요건 페이지로 이동-->
+                    <button>청원요건</button>
+                    <!--문의사항 페이지로 이동-->
+                    <button id = "petition-qna">문의사항</button>
+                </div>
+            </div>
+        </section>
+        <section class = "mini-title">
+            <h2>문의사항</h2>
+        </section>
+        <section class="ment">
+            <div class = "ment-box">
+                <p>DONG-A 소리함 사이트를 이용하며 불편한 점을 작성해주세요.</p>
+            </div>
+        </section>
+        <section class = "table-section">
+            <div class = "writing-petition-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th class = "number">번호</th>
+                            <th class = "petition-name">제목</th>
+                            <th>작성일</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td colspan = "3">조회된 데이터가 없습니다.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        <section class = "writing-button">
+            <button>작성하기</button>
+        </section>
+    </body>
+</html>

@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    padding : 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background-color: white;
+    color: white;
+    margin-bottom : 30px;
+}
+
+.header-container {
+    display: flex;
+    padding: 60px 90px 30px 90px;
+    align-items : center;
+}
+
+.logo img {
+    height: 80px;
+    margin-right : 70px;
+}
+
+/* 검색창 */
+.search-box {
+    position : relative; /* 입력창과 버튼을 가로로 나란히 배치 */
+    display : inline-block;
+    width : 480px;
+    margin-right : 420px;
+}
+
+.input-box {
+    width : 100%;
+    border : 2px solid #007FFF; /* 파란색 테두리 */
+    border-radius : 10px; /* 테두리 모서리 둥글게 처리 */
+    flex-grow: 1; /* 입력창이 버튼보다 더 넓게 차지 */
+    padding : 20px 70px 20px 20px;
+    height : 60px;
+    font-size : 16px;
+    box-sizing : border-box;
+}
+
+.input-button {
+    position : absolute;
+    right : 10px;
+    top : 0;
+    height : 100%;
+    width : 60px;
+    size : 10px;
+    padding : 0px;
+    cursor : pointer;
+    background: none;
+    border: none;
+    color : #007FFF
+}
+
+/* 로그인 및 회원가입 */
+.login-section {
+    display : flex;
+    gap : 50px;
+}
+
+.login-section a {
+    text-decoration : none; /* 밑줄 제거 */
+    color : #bcbcbc;
+}
+
+.login-section a:hover,
+.login-section a:active,
+.login-section a:focus {
+    color : #007FFF;
+    font-weight: bold;
+}
+
+
+/* 선택 영역 */
+.selection {
+    margin : 0 auto;
+}
+
+
+.selection nav ul {
+    display : flex;
+    list-style : none;
+    padding : 0;
+    justify-content: center;
+    gap : 300px;
+}
+
+.selection nav ul li {
+    gap : 300px;
+}
+
+.selection nav ul li a {
+    text-decoration : none;
+    color : black;
+    letter-spacing: 3px;
+}
+
+.selection nav ul li a:hover,
+.selection nav ul li a:active,
+.selection nav ul li a:focus {
+    color : #007FFF;
+    font-weight: bold;
+}
+
+
+
+
+/* 배너 사진 */
+.main-banner {
+    position : relative;
+    width : 100%;
+    overflow : hidden;
+}
+.main-banner img {
+    width : 100%;
+    height : 450px;
+    object-fit: cover; /*이미지 비율 유지 */
+}
+
+.overlay {
+    position : absolute;
+    top : 0;
+    left : 0;
+    width : 100%;
+    height : 100%;
+    display : flex;
+    text-align : center;
+    justify-content : center;
+    align-items : center;
+    flex-direction : column;
+}
+
+.overlay h1 {
+    font-size : 35px;
+    margin-bottom : 40px;
+    letter-spacing: 5px;
+    color : white;
+    text-shadow : 2px 2px 5px rgba(96, 96, 96, 0.7)
+}
+
+.petition-button {
+    display : flex;
+    gap : 40px;
+}
+
+.overlay button {
+    width : 235px;
+    height : 62px;
+    padding : 10px 20px;
+    font-size : 25px;
+    font-weight : bolder;
+    letter-spacing : 5px;
+    color : white;
+    background-color : #007FFF;
+    border : none;
+    border-radius : 15px;
+    cursor : pointer;
+    transition : background-color 0.3s;
+}
+
+.overlay button:hover {
+    color : #007FFF;
+    background-color : white;
+}
+
+.ment {
+    margin-top : 60px;
+    text-align : center;
+    justify-content : center;
+    align-items : center;
+    flex-direction : column;
+}
+
+.ment h2{
+    letter-spacing : 5px;
+    margin-bottom : 30px;
+    font-weight : bolder;
+}
+
+.ment p {
+    color : #bcbcbc;
+    font-weight: bolder;
+    letter-spacing : 3px;
+}

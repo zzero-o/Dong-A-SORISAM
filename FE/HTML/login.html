@@ -1,0 +1,72 @@
+<!--로그인 페이지-->
+
+<!DOCTYPE html>
+<html lang = "ko">
+    <head>
+        <meta charset = "UTF-8">
+        <title>DONG-A 소리함</title>
+        <link rel = "stylesheet" href = "../CSS/login.css">
+    </head>
+    <body>
+        <!--Header 영역-->
+        <header>
+            <div class = "header-container">
+                <div class = "logo">
+                    <!--로고 클릭 시 메인페이지(main.html)로 이동-->
+                    <a href = "main.html">
+                        <img src = "../PNG/DONG-A 소리함 로고.png" alt = "DONG-A 소리함 로고">
+                    </a>
+                </div>
+                <div class = "search-box">
+                    <input class = "input-box" type = "text" placeholder = "검색 키워드를 입력하세요">
+                    <button class = "input-button" type = "submit">
+                        검색
+                    </button>
+                </div>
+                <div class = "login-section">
+                    <!--로그인 페이지로 이동-->
+                    <a href = "login.html">로그인</a>
+                    <!--회원가입 페이지로 이동-->
+                    <a href = "join.html">회원가입</a>
+                </div>
+            </div>
+            <div class = "selection">
+                <nav>
+                    <ul>
+                        <!--청원 안내 페이지로 이동-->
+                        <li><a href = "notice-sequence.html">청원 안내</a></li>
+                        <!--동의 진행 청원 페이지로 이동-->
+                        <li><a href = "proceed.html">동의진행 청원</a></li>
+                        <!--동의 종료 청원 페이지로 이동-->
+                        <li><a href = "end.html">동의종료 청원</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <hr>
+
+        <!--Body 영역-->
+        
+        <h2>로그인</h2>
+        <form class = "login-form">
+            <div class = "form-group">
+                <!--이메일 입력창-->
+                <input type = "email" id = "email" name = "email" placeholder="이메일을 입력해주세요." required>
+            </div>
+            <div class = "form-group">
+                <!--비밀번호 입력창-->
+                <input type = "password" id = "password" name = "password" placeholder="비밀번호를 입력해주세요." required>
+            </div>
+            <div class = "footer-links">
+                <a href = "find-password.html">비밀번호 찾기</a>
+            </div>
+            <div class = "login-button">
+                <button id = "login-btn" type = "submit">로그인</button>
+            </div>
+            <div class = "login-button">
+                <button id = "join-btn">회원가입</button>
+            </div>
+        </form>
+    </body>
+</html>
